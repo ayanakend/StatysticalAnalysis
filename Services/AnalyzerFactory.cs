@@ -13,7 +13,7 @@ namespace StatysticalAnalysisApp.Services
                 case 14:
                     //return new PopulationAnalyzer();
                 case 16:
-                    //return new RoadsAnalyzer();
+                    return new RoadsAnalyzer();
                 default:
                     throw new ArgumentException("Неверный вариант");
             }

@@ -15,6 +15,12 @@ namespace StatysticalAnalysis
         public Form1()
         {
             InitializeComponent();
+            comboBoxDataset.Items.AddRange(new[] { "10: Инфляция", "14: Население", "16: Дороги" });
+            comboBoxDataset.SelectedIndexChanged += ComboBoxDataset_SelectedIndexChanged;
+        }
+        private void ComboBoxDataset_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadDataForSelectedVariant();
         }
     }
 }

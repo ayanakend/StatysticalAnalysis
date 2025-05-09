@@ -11,7 +11,7 @@ namespace StatysticalAnalysisApp.Services
                 case 10:
                     //return new InflationAnalyzer();
                 case 14:
-                    //return new PopulationAnalyzer();
+                    return new PopulationAnalyzer();
                 case 16:
                     return new RoadsAnalyzer();
                 default:
